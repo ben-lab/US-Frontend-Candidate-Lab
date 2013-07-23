@@ -1,0 +1,39 @@
+* {
+	padding:0;
+	margin:0;
+}
+
+.layout-container {
+	
+}
+
+.layout-polaroids {
+	
+}
+
+.polaroid {
+	position:relative;
+	width:254px;
+	height:278px;
+	background:url('../img/polaroid.png');
+	img {
+		position:relative;
+		margin:16px 0px 0px 15px;
+	}
+	.polaroid-details {
+		position:absolute;
+		z-index:5;
+		&.title {
+			top:40px;
+			left:3px;
+		}
+		&.date {
+			top:70px;
+			left:14px;
+		}
+	}
+}
+
+.layout-invitation {
+	
+}

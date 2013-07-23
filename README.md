@@ -41,5 +41,6 @@ Use this area to communicate any thought processes, ideas, or challenges you enc
 ## Challenges
 
 ## Enhancements
+* Better naming convention for selectors.
 
 ## Future Updates
