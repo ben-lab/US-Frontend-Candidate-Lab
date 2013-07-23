@@ -36,6 +36,10 @@ Submit a pull request when you are finished and satisfied with your work.
 
 Use this area to communicate any thought processes, ideas, or challenges you encountered.
 
-*
-*
-*
+## Approach
+
+## Challenges
+
+## Enhancements
+
+## Future Updates
