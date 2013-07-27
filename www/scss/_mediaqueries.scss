@@ -4,28 +4,92 @@
    Modify as content requires.
    ========================================================================== */
 
-@media screen and (max-width: 320px) {
+/** MOBILE **/
+@media screen and (min-width: 320px) {
     .layout-container {
         overflow:auto;
     }
+    .layout-rsvp {
+        position:fixed;
+        right:10px;
+        top:10px;
+    }
     .layout-polaroids {
-        width:100%;
+        text-align:center;
+    }
+    .polaroid {
+        position:relative;
+        margin:5px;
+        &.boot, &.person {
+            display:none;
+        }
+    }
+    .layout-invitation {
+        top:330px;
+        bottom:auto;
+        text-align:center;
+        display:none;
+        h1 {
+            font-size:40px;
+        }
+        p {
+            width:100%;
+            font-size:18px;
+            text-align:left;
+        }
+        .invitation-response {
+            font-size:16px;
+        }
+    }
+    a {
+        &.invitation-btn {
+            margin-top:30px;
+            text-align:center;
+            width:auto;
+        }
     }
 }
 
+/** TABLET **/
 @media screen and (min-width: 768px) {
     .layout-container {
-        overflow:hidden;
+        overflow-x:hidden;
     }
     .layout-polaroids {
         width:100%;
+        text-align:left;
+    }
+    .polaroid {
+        position:absolute;
+        &.boot, &.person {
+            display:block;
+        }
     }
     .layout-invitation {
-        position:absolute;
         width:580px;
         top:330px;
         left:50%;
-        margin-left:-290px;
+        margin-left:-320px;
+        display:block;
+        h1 {
+            text-align:center;
+            font-size:50px;
+        }
+        p {
+            width:100%;
+            font-size:16px;
+            text-align:left;
+        }
+        .invitation-response {
+            font-size:16px;
+        }
+    }
+    a {
+        &.invitation-btn {
+            text-align:center;
+            width:223px;
+            margin-top:15px;
+        }
     }
     .polaroid {
         &.title {
@@ -34,7 +98,7 @@
             -webkit-transform:rotate(1deg);
         }
         &.description {
-            left:50%;
+            left:48%;
             margin-left:-125px;
             transform:rotate(-1deg);
             -ms-transform:rotate(-1deg);
@@ -63,6 +127,7 @@
     }
 }
 
+/** DESKTOP **/
 @media screen and (min-width:960px) {
     .layout-container {
         overflow:hidden;
@@ -77,6 +142,23 @@
         left:0px;
         top:auto;
         margin-left:0px;
+        text-align:left;
+        h1 {
+            font-size:30px;
+            text-align:left;
+        }
+        p {
+            width:75%;
+        }
+        .invitation-response {
+            font-size:14px;
+        }
+    }
+    a {
+        &.invitation-btn {
+            text-align:center;
+            width:auto;
+        }
     }
     .polaroid {
         &.title {

@@ -30,8 +30,9 @@ body {
 	-webkit-box-shadow:  2px 2px 4px 0px rgba(0, 0, 0, .3);
 	box-shadow:  2px 2px 4px 0px rgba(0, 0, 0, .3);
 	img {
-		position:relative;
-		margin:16px 0px 0px 15px;
+		position:absolute;
+		top:16px;
+		left:15px;
 	}
 	.polaroid-details {
 		position:absolute;
@@ -51,8 +52,10 @@ body {
 			z-index:2;
 			font-size:13px;
 			color:#FFF;
-			margin:162px auto 0px 27px;
+			top:162px;
+			left:24px;
 			text-shadow: 0px 0px 3px rgba(0,0,0, 0.75);
+			width:210px;
 		}
 	}
 	&.date {
@@ -79,6 +82,7 @@ body {
 .layout-invitation {
 	background:url('../img/invitation_bg.jpg');
 	z-index:20;
+	position:absolute;
 	padding:30px;
 	color:$grey-color;
 	-webkit-box-shadow: inset 0px 0px 22px 0px rgba(0, 0, 0, .22); 
@@ -90,14 +94,12 @@ body {
 	p {
 		font-family:Arial, sans-serif;
 		font-size:12px;
-		width:75%;
 		position:relative;
 		line-height:23px;
 		margin-top:10px;
 	}
 	.invitation-response {
 		font-weight:bold;
-		font-size:14px;
 		opacity:0;
 		height:24px;
 		a {
@@ -126,17 +128,20 @@ body {
 a {
 	&.invitation-btn {
 		display:inline-block;
-		margin:15px 10px 0px 0px;
 		color:#FFF;
 		@include Helvetica-Neue-Condensed;
 		font-weight:300;
 		text-decoration:none;
 		background:$grey-color;
 		padding:10px 30px;
+		margin-right:10px;
 		-webkit-border-radius:3px;
 		border-radius:3px;
 		&:hover, &.active {
 			background:$orange;
+		}
+		&:last-child{
+			margin-right:0px;
 		}
 	}
 }
