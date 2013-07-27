@@ -538,46 +538,68 @@ td {
 /* =========================================
   FONTS
 ======================================== */
+@font-face {
+  font-family: 'Courtney-Dorkling';
+  src: url("../fonts/courtneydorkling.ttf") format("truetype");
+}
+
 /* line 1, ../scss/_layout.scss */
 * {
   padding: 0;
   margin: 0;
+  font-family: Arial,sans-serif;
 }
 
-/* line 6, ../scss/_layout.scss */
+/* line 7, ../scss/_layout.scss */
 body {
   background: url("../img/woodgrain.jpg");
 }
 
-/* line 18, ../scss/_layout.scss */
+/* line 19, ../scss/_layout.scss */
 .polaroid {
   position: relative;
   width: 254px;
   height: 278px;
   background: url("../img/polaroid.png");
 }
-/* line 23, ../scss/_layout.scss */
+/* line 24, ../scss/_layout.scss */
 .polaroid img {
   position: relative;
   margin: 16px 0px 0px 15px;
 }
-/* line 27, ../scss/_layout.scss */
+/* line 28, ../scss/_layout.scss */
 .polaroid .polaroid-details {
   position: absolute;
   z-index: 5;
 }
-/* line 30, ../scss/_layout.scss */
+/* line 31, ../scss/_layout.scss */
 .polaroid .polaroid-details.title {
   top: 40px;
   left: 3px;
 }
-/* line 34, ../scss/_layout.scss */
+/* line 35, ../scss/_layout.scss */
 .polaroid .polaroid-details.date {
   top: 70px;
   left: 14px;
 }
-
 /* line 41, ../scss/_layout.scss */
+.polaroid.description p {
+  position: absolute;
+  width: 205px;
+  z-index: 2;
+  font-size: 13px;
+  color: #FFF;
+  margin: 155px auto 0px 27px;
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.75);
+}
+/* line 52, ../scss/_layout.scss */
+.polaroid.date p {
+  font-family: 'Courtney-Dorkling',sans-serif;
+  color: #3a3a3a;
+  font-size: 13px;
+}
+
+/* line 60, ../scss/_layout.scss */
 .layout-invitation {
   background: url("../img/invitation_bg.jpg");
 }
