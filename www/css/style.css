@@ -544,32 +544,42 @@ td {
   margin: 0;
 }
 
-/* line 14, ../scss/_layout.scss */
+/* line 6, ../scss/_layout.scss */
+body {
+  background: url("../img/woodgrain.jpg");
+}
+
+/* line 18, ../scss/_layout.scss */
 .polaroid {
   position: relative;
   width: 254px;
   height: 278px;
   background: url("../img/polaroid.png");
 }
-/* line 19, ../scss/_layout.scss */
+/* line 23, ../scss/_layout.scss */
 .polaroid img {
   position: relative;
   margin: 16px 0px 0px 15px;
 }
-/* line 23, ../scss/_layout.scss */
+/* line 27, ../scss/_layout.scss */
 .polaroid .polaroid-details {
   position: absolute;
   z-index: 5;
 }
-/* line 26, ../scss/_layout.scss */
+/* line 30, ../scss/_layout.scss */
 .polaroid .polaroid-details.title {
   top: 40px;
   left: 3px;
 }
-/* line 30, ../scss/_layout.scss */
+/* line 34, ../scss/_layout.scss */
 .polaroid .polaroid-details.date {
   top: 70px;
   left: 14px;
+}
+
+/* line 41, ../scss/_layout.scss */
+.layout-invitation {
+  background: url("../img/invitation_bg.jpg");
 }
 
 /* ==|== media queries ======================================================
