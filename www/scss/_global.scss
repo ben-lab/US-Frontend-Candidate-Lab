@@ -1,7 +1,7 @@
 /* =========================================
   VARIABLES
 ======================================== */
-
+$grey-color:#383838;
 
 /* =========================================
   MIXINS
@@ -11,6 +11,17 @@
 	cursor:pointer;
 }
 
+@mixin Helvetica-Neue-Condensed {
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
 /* =========================================
   FONTS
 ======================================== */
+
+@font-face {
+    font-family: 'Courtney-Dorkling';
+    src: url('../fonts/courtneydorkling.ttf') format('truetype');
+}
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);

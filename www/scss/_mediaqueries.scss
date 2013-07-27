@@ -4,10 +4,54 @@
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media screen and (min-width: 960px) {
+    .layout-invitation {
+        background:url('../img/invitation_bg.jpg');
+        width:580px;
+    }
+    .polaroid {
+        &.title {
+            transform:rotate(1deg);
+            -ms-transform:rotate(1deg);
+            -webkit-transform:rotate(1deg);
+        }
+        &.description {
+            left:50%;
+            margin-left:-125px;
+            transform:rotate(-1deg);
+            -ms-transform:rotate(-1deg);
+            -webkit-transform:rotate(-1deg);
+        }
+        &.date {
+            right:0px;
+            transform:rotate(5deg);
+            -ms-transform:rotate(5deg);
+            -webkit-transform:rotate(5deg);
+        }
+        &.boot {
+            bottom:-100px;
+            left:50%;
+            transform:rotate(8deg);
+            -ms-transform:rotate(8deg);
+            -webkit-transform:rotate(8deg);
+        }
+        &.person {
+            bottom:-80px;
+            left:90%;
+            transform:rotate(-12deg);
+            -ms-transform:rotate(-12deg);
+            -webkit-transform:rotate(-12deg);
+        }
+    }
 }
 
+@media screen and (min-width: 758px) {
+
+}
+
+@media screen and (min-width: 524px) {
+
+}
 
 /* ==|== print styles =======================================================
    Print styles.
