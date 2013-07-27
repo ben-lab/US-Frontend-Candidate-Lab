@@ -556,36 +556,42 @@ body {
   background: url("../img/woodgrain.jpg");
 }
 
+/* line 15, ../scss/_layout.scss */
+.layout-polaroids {
+  width: 100%;
+}
+
 /* line 19, ../scss/_layout.scss */
 .polaroid {
   position: relative;
+  display: inline-block;
   width: 254px;
   height: 278px;
   background: url("../img/polaroid.png");
   -webkit-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.3);
 }
-/* line 26, ../scss/_layout.scss */
+/* line 27, ../scss/_layout.scss */
 .polaroid img {
   position: relative;
   margin: 16px 0px 0px 15px;
 }
-/* line 30, ../scss/_layout.scss */
+/* line 31, ../scss/_layout.scss */
 .polaroid .polaroid-details {
   position: absolute;
   z-index: 5;
 }
-/* line 33, ../scss/_layout.scss */
+/* line 34, ../scss/_layout.scss */
 .polaroid .polaroid-details.title {
   top: 40px;
   left: 3px;
 }
-/* line 37, ../scss/_layout.scss */
+/* line 38, ../scss/_layout.scss */
 .polaroid .polaroid-details.date {
   top: 70px;
   left: 14px;
 }
-/* line 43, ../scss/_layout.scss */
+/* line 44, ../scss/_layout.scss */
 .polaroid.description p {
   position: absolute;
   z-index: 2;
@@ -594,7 +600,7 @@ body {
   margin: 155px auto 0px 27px;
   text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.75);
 }
-/* line 53, ../scss/_layout.scss */
+/* line 54, ../scss/_layout.scss */
 .polaroid.date p {
   width: 220px;
   font-family: 'Courtney-Dorkling',sans-serif;
@@ -603,19 +609,19 @@ body {
   position: absolute;
   letter-spacing: 1px;
 }
-/* line 60, ../scss/_layout.scss */
+/* line 61, ../scss/_layout.scss */
 .polaroid.date p.line1 {
   top: 235px;
   left: 20px;
 }
-/* line 64, ../scss/_layout.scss */
+/* line 65, ../scss/_layout.scss */
 .polaroid.date p.line2 {
   bottom: 10px;
   right: 20px;
   text-align: right;
 }
 
-/* line 73, ../scss/_layout.scss */
+/* line 74, ../scss/_layout.scss */
 .layout-invitation {
   background: url("../img/invitation_bg.jpg");
   width: 580px;
@@ -627,12 +633,12 @@ body {
   box-shadow: inset 0px 0px 22px 0px rgba(0, 0, 0, 0.22);
   /** for outter shadow **/
 }
-/* line 82, ../scss/_layout.scss */
+/* line 83, ../scss/_layout.scss */
 .layout-invitation h1 {
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 700;
 }
-/* line 87, ../scss/_layout.scss */
+/* line 88, ../scss/_layout.scss */
 .layout-invitation:after {
   position: absolute;
   z-index: -1;
@@ -644,6 +650,21 @@ body {
   left: 0px;
   -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* line 103, ../scss/_layout.scss */
+a.invitation-btn {
+  color: #FFF;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  background: #383838;
+  padding: 15px 30px;
+  position: relative;
+}
+/* line 111, ../scss/_layout.scss */
+a.invitation-btn:hover {
+  background: #f7923a;
 }
 
 /* ==|== media queries ======================================================

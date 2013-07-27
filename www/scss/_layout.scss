@@ -13,11 +13,12 @@ body {
 }
 
 .layout-polaroids {
-	
+	width:100%;
 }
 
 .polaroid {
 	position:relative;
+	display:inline-block;
 	width:254px;
 	height:278px;
 	background:url('../img/polaroid.png');
@@ -95,5 +96,20 @@ body {
 		left:0px;
 		-webkit-box-shadow:  0px 0px 30px 0px rgba(0, 0, 0, .5);
         box-shadow:  0px 0px 30px 0px rgba(0, 0, 0, .5);
+	}
+}
+
+a {
+	&.invitation-btn {
+		color:#FFF;
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-weight:700;
+		text-decoration:none;
+		background:#383838;
+		padding:15px 30px;
+		position:relative;
+		&:hover {
+			background:#f7923a;
+		}
 	}
 }
