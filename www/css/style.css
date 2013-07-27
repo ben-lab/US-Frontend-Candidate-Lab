@@ -585,21 +585,34 @@ body {
 /* line 41, ../scss/_layout.scss */
 .polaroid.description p {
   position: absolute;
-  width: 205px;
   z-index: 2;
   font-size: 13px;
   color: #FFF;
   margin: 155px auto 0px 27px;
   text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.75);
 }
-/* line 52, ../scss/_layout.scss */
+/* line 51, ../scss/_layout.scss */
 .polaroid.date p {
+  width: 220px;
   font-family: 'Courtney-Dorkling',sans-serif;
   color: #3a3a3a;
-  font-size: 13px;
+  font-size: 11px;
+  position: absolute;
+  letter-spacing: 1px;
+}
+/* line 58, ../scss/_layout.scss */
+.polaroid.date p.line1 {
+  top: 235px;
+  left: 20px;
+}
+/* line 62, ../scss/_layout.scss */
+.polaroid.date p.line2 {
+  bottom: 10px;
+  right: 20px;
+  text-align: right;
 }
 
-/* line 60, ../scss/_layout.scss */
+/* line 71, ../scss/_layout.scss */
 .layout-invitation {
   background: url("../img/invitation_bg.jpg");
 }

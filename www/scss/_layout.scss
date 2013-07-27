@@ -40,7 +40,6 @@ body {
 	&.description {
 		p {
 			position:absolute;
-			width:205px;
 			z-index:2;
 			font-size:13px;
 			color:#FFF;
@@ -50,9 +49,21 @@ body {
 	}
 	&.date {
 		p {
+			width:220px;
 			font-family:'Courtney-Dorkling',sans-serif;
 			color:#3a3a3a;
-			font-size:13px;
+			font-size:11px;
+			position:absolute;
+			letter-spacing:1px;
+			&.line1 {
+				top:235px;
+				left:20px;
+			}
+			&.line2 {
+				bottom:10px;
+				right:20px;
+				text-align:right;
+			}
 		}
 	}
 }
