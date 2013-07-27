@@ -561,28 +561,30 @@ body {
   width: 254px;
   height: 278px;
   background: url("../img/polaroid.png");
+  -webkit-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.3);
 }
-/* line 24, ../scss/_layout.scss */
+/* line 26, ../scss/_layout.scss */
 .polaroid img {
   position: relative;
   margin: 16px 0px 0px 15px;
 }
-/* line 28, ../scss/_layout.scss */
+/* line 30, ../scss/_layout.scss */
 .polaroid .polaroid-details {
   position: absolute;
   z-index: 5;
 }
-/* line 31, ../scss/_layout.scss */
+/* line 33, ../scss/_layout.scss */
 .polaroid .polaroid-details.title {
   top: 40px;
   left: 3px;
 }
-/* line 35, ../scss/_layout.scss */
+/* line 37, ../scss/_layout.scss */
 .polaroid .polaroid-details.date {
   top: 70px;
   left: 14px;
 }
-/* line 41, ../scss/_layout.scss */
+/* line 43, ../scss/_layout.scss */
 .polaroid.description p {
   position: absolute;
   z-index: 2;
@@ -591,7 +593,7 @@ body {
   margin: 155px auto 0px 27px;
   text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.75);
 }
-/* line 51, ../scss/_layout.scss */
+/* line 53, ../scss/_layout.scss */
 .polaroid.date p {
   width: 220px;
   font-family: 'Courtney-Dorkling',sans-serif;
@@ -600,21 +602,27 @@ body {
   position: absolute;
   letter-spacing: 1px;
 }
-/* line 58, ../scss/_layout.scss */
+/* line 60, ../scss/_layout.scss */
 .polaroid.date p.line1 {
   top: 235px;
   left: 20px;
 }
-/* line 62, ../scss/_layout.scss */
+/* line 64, ../scss/_layout.scss */
 .polaroid.date p.line2 {
   bottom: 10px;
   right: 20px;
   text-align: right;
 }
 
-/* line 71, ../scss/_layout.scss */
+/* line 73, ../scss/_layout.scss */
 .layout-invitation {
   background: url("../img/invitation_bg.jpg");
+  width: 580px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  -webkit-box-shadow: inset 0px 0px 22px 0px rgba(0, 0, 0, 0.22);
+  box-shadow: inset 0px 0px 22px 0px rgba(0, 0, 0, 0.22);
 }
 
 /* ==|== media queries ======================================================
