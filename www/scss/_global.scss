@@ -1,7 +1,7 @@
 /* =========================================
   VARIABLES
 ======================================== */
-
+$grey-color:#383838;
 
 /* =========================================
   MIXINS
@@ -9,6 +9,10 @@
 
 @mixin button {
 	cursor:pointer;
+}
+
+@mixin Helvetica-Neue-Condensed {
+	font-family: 'Open Sans Condensed', sans-serif;
 }
 
 /* =========================================

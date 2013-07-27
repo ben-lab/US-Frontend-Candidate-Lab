@@ -556,14 +556,26 @@ body {
   background: url("../img/woodgrain.jpg");
 }
 
-/* line 15, ../scss/_layout.scss */
-.layout-polaroids {
+/* line 11, ../scss/_layout.scss */
+.layout-container {
+  position: absolute;
   width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
-/* line 19, ../scss/_layout.scss */
-.polaroid {
+/* line 18, ../scss/_layout.scss */
+.layout-polaroids {
   position: relative;
+  margin: auto;
+  width: 80%;
+  height: 100%;
+  padding-top: 30px;
+}
+
+/* line 26, ../scss/_layout.scss */
+.polaroid {
+  position: absolute;
   display: inline-block;
   width: 254px;
   height: 278px;
@@ -571,36 +583,36 @@ body {
   -webkit-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.3);
 }
-/* line 27, ../scss/_layout.scss */
+/* line 34, ../scss/_layout.scss */
 .polaroid img {
   position: relative;
   margin: 16px 0px 0px 15px;
 }
-/* line 31, ../scss/_layout.scss */
+/* line 38, ../scss/_layout.scss */
 .polaroid .polaroid-details {
   position: absolute;
   z-index: 5;
 }
-/* line 34, ../scss/_layout.scss */
+/* line 41, ../scss/_layout.scss */
 .polaroid .polaroid-details.title {
   top: 40px;
   left: 3px;
 }
-/* line 38, ../scss/_layout.scss */
+/* line 45, ../scss/_layout.scss */
 .polaroid .polaroid-details.date {
   top: 70px;
   left: 14px;
 }
-/* line 44, ../scss/_layout.scss */
+/* line 51, ../scss/_layout.scss */
 .polaroid.description p {
   position: absolute;
   z-index: 2;
   font-size: 13px;
   color: #FFF;
-  margin: 155px auto 0px 27px;
+  margin: 162px auto 0px 27px;
   text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.75);
 }
-/* line 54, ../scss/_layout.scss */
+/* line 61, ../scss/_layout.scss */
 .polaroid.date p {
   width: 220px;
   font-family: 'Courtney-Dorkling',sans-serif;
@@ -609,36 +621,46 @@ body {
   position: absolute;
   letter-spacing: 1px;
 }
-/* line 61, ../scss/_layout.scss */
+/* line 68, ../scss/_layout.scss */
 .polaroid.date p.line1 {
   top: 235px;
   left: 20px;
 }
-/* line 65, ../scss/_layout.scss */
+/* line 72, ../scss/_layout.scss */
 .polaroid.date p.line2 {
   bottom: 10px;
   right: 20px;
   text-align: right;
 }
 
-/* line 74, ../scss/_layout.scss */
+/* line 81, ../scss/_layout.scss */
 .layout-invitation {
   background: url("../img/invitation_bg.jpg");
-  width: 580px;
   position: absolute;
+  z-index: 20;
   bottom: 0px;
   left: 0px;
   padding: 30px;
+  color: #383838;
   -webkit-box-shadow: inset 0px 0px 22px 0px rgba(0, 0, 0, 0.22);
   box-shadow: inset 0px 0px 22px 0px rgba(0, 0, 0, 0.22);
   /** for outter shadow **/
 }
-/* line 83, ../scss/_layout.scss */
+/* line 91, ../scss/_layout.scss */
 .layout-invitation h1 {
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 700;
 }
-/* line 88, ../scss/_layout.scss */
+/* line 95, ../scss/_layout.scss */
+.layout-invitation p {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  width: 75%;
+  position: relative;
+  line-height: 23px;
+  margin-top: 10px;
+}
+/* line 104, ../scss/_layout.scss */
 .layout-invitation:after {
   position: absolute;
   z-index: -1;
@@ -652,18 +674,21 @@ body {
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
 }
 
-/* line 103, ../scss/_layout.scss */
+/* line 119, ../scss/_layout.scss */
 a.invitation-btn {
+  display: inline-block;
+  margin: 15px 10px 0px 0px;
   color: #FFF;
   font-family: 'Open Sans Condensed', sans-serif;
-  font-weight: 700;
+  font-weight: 300;
   text-decoration: none;
   background: #383838;
-  padding: 15px 30px;
-  position: relative;
+  padding: 10px 30px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
 }
-/* line 111, ../scss/_layout.scss */
-a.invitation-btn:hover {
+/* line 130, ../scss/_layout.scss */
+a.invitation-btn:hover, a.invitation-btn.active {
   background: #f7923a;
 }
 
@@ -672,15 +697,57 @@ a.invitation-btn:hover {
    This example overrides the primary ('mobile first') styles
    Modify as content requires.
    ========================================================================== */
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media screen and (min-width: 960px) {
+  /* line 8, ../scss/_mediaqueries.scss */
+  .layout-invitation {
+    background: url("../img/invitation_bg.jpg");
+    width: 580px;
+  }
+
+  /* line 13, ../scss/_mediaqueries.scss */
+  .polaroid.title {
+    transform: rotate(1deg);
+    -ms-transform: rotate(1deg);
+    -webkit-transform: rotate(1deg);
+  }
+  /* line 18, ../scss/_mediaqueries.scss */
+  .polaroid.description {
+    left: 50%;
+    margin-left: -125px;
+    transform: rotate(-1deg);
+    -ms-transform: rotate(-1deg);
+    -webkit-transform: rotate(-1deg);
+  }
+  /* line 25, ../scss/_mediaqueries.scss */
+  .polaroid.date {
+    right: 0px;
+    transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+  }
+  /* line 31, ../scss/_mediaqueries.scss */
+  .polaroid.boot {
+    bottom: -100px;
+    left: 50%;
+    transform: rotate(8deg);
+    -ms-transform: rotate(8deg);
+    -webkit-transform: rotate(8deg);
+  }
+  /* line 38, ../scss/_mediaqueries.scss */
+  .polaroid.person {
+    bottom: -80px;
+    left: 90%;
+    transform: rotate(-12deg);
+    -ms-transform: rotate(-12deg);
+    -webkit-transform: rotate(-12deg);
+  }
 }
 /* ==|== print styles =======================================================
    Print styles.
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
-  /* line 18, ../scss/_mediaqueries.scss */
+  /* line 62, ../scss/_mediaqueries.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -689,18 +756,18 @@ a.invitation-btn:hover {
     text-shadow: none !important;
   }
 
-  /* line 26, ../scss/_mediaqueries.scss */
+  /* line 70, ../scss/_mediaqueries.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 30, ../scss/_mediaqueries.scss */
+  /* line 74, ../scss/_mediaqueries.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 34, ../scss/_mediaqueries.scss */
+  /* line 78, ../scss/_mediaqueries.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -708,33 +775,33 @@ a.invitation-btn:hover {
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 44, ../scss/_mediaqueries.scss */
+  /* line 88, ../scss/_mediaqueries.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 49, ../scss/_mediaqueries.scss */
+  /* line 93, ../scss/_mediaqueries.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 54, ../scss/_mediaqueries.scss */
+  /* line 98, ../scss/_mediaqueries.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-  /* line 59, ../scss/_mediaqueries.scss */
+  /* line 103, ../scss/_mediaqueries.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 63, ../scss/_mediaqueries.scss */
+  /* line 107, ../scss/_mediaqueries.scss */
   img {
     max-width: 100% !important;
   }
@@ -743,7 +810,7 @@ a.invitation-btn:hover {
     margin: 0.5cm;
 }
 
-  /* line 73, ../scss/_mediaqueries.scss */
+  /* line 117, ../scss/_mediaqueries.scss */
   p,
   h2,
   h3 {
@@ -751,7 +818,7 @@ a.invitation-btn:hover {
     widows: 3;
   }
 
-  /* line 79, ../scss/_mediaqueries.scss */
+  /* line 123, ../scss/_mediaqueries.scss */
   h2,
   h3 {
     page-break-after: avoid;
