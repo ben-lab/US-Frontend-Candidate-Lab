@@ -5,15 +5,27 @@
    ========================================================================== */
 
 @media screen and (max-width: 320px) {
-
-}
-
-@media screen and (min-width: 768px) {
     .layout-container {
         overflow:auto;
     }
     .layout-polaroids {
         width:100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .layout-container {
+        overflow:hidden;
+    }
+    .layout-polaroids {
+        width:100%;
+    }
+    .layout-invitation {
+        position:absolute;
+        width:580px;
+        top:330px;
+        left:50%;
+        margin-left:-290px;
     }
     .polaroid {
         &.title {
@@ -29,21 +41,21 @@
             -webkit-transform:rotate(-1deg);
         }
         &.date {
-            right:0px;
+            right:20px;
             transform:rotate(5deg);
             -ms-transform:rotate(5deg);
             -webkit-transform:rotate(5deg);
         }
         &.boot {
-            bottom:-100px;
-            left:50%;
+            bottom:-30px;
+            left:-50px;
             transform:rotate(8deg);
             -ms-transform:rotate(8deg);
             -webkit-transform:rotate(8deg);
         }
         &.person {
-            bottom:-80px;
-            left:90%;
+            right:-40px;
+            bottom:-90px;
             transform:rotate(-12deg);
             -ms-transform:rotate(-12deg);
             -webkit-transform:rotate(-12deg);
@@ -59,8 +71,12 @@
         width:80%!important;
     }
     .layout-invitation {
-        background:url('../img/invitation_bg.jpg');
+        position:absolute;
         width:580px;
+        bottom:0px;
+        left:0px;
+        top:auto;
+        margin-left:0px;
     }
     .polaroid {
         &.title {
