@@ -1,6 +1,9 @@
 (function(){
 	var invitBtn = $('.invitation-btn');
 	var inviteResponse = $('.invitation-response');
+	var rsvpBtn = $('.rsvp-btn');
+	var invitation = $('.layout-invitation');
+	var invitationOpen = false;
 
 	function showResponse(){
 		inviteResponse.animate({'opacity':'1'},200);
@@ -15,5 +18,16 @@
 			inviteResponse.html("Awww! You sure you don't want to come?");
 		}
 		showResponse();
+	});
+
+	// RSVP button
+	rsvpBtn.on('click',function(){
+		if(!invitationOpen) {
+			rsvpBtn.html('CLOSE');
+			invitation.stop().fadeIn("slow");
+		} else {
+			rsvpBtn.html('RSVP');
+			invitation.stop().fadeOut("slow");
+		}
 	});
 })();

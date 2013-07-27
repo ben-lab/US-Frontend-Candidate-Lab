@@ -11,8 +11,14 @@
     }
     .layout-rsvp {
         position:fixed;
-        right:10px;
-        top:10px;
+        right:15px;
+        top:5px;
+        z-index:100;
+        font-size:20px;
+        a {
+            color:#FFF;
+            text-shadow: 0px 0px 5px rgba(0,0,0, 0.75);
+        }
     }
     .layout-polaroids {
         text-align:center;
@@ -25,7 +31,7 @@
         }
     }
     .layout-invitation {
-        top:330px;
+        top:35px;
         bottom:auto;
         text-align:center;
         display:none;
@@ -55,6 +61,9 @@
     .layout-container {
         overflow-x:hidden;
     }
+    .layout-rsvp {
+        display:none;
+    }
     .layout-polaroids {
         width:100%;
         text-align:left;
@@ -71,6 +80,7 @@
         left:50%;
         margin-left:-320px;
         display:block;
+        position:absolute;
         h1 {
             text-align:center;
             font-size:50px;
