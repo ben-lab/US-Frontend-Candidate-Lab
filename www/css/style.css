@@ -556,28 +556,28 @@ body {
   height: 278px;
   background: url("../img/polaroid.png");
 }
-/* line 23, ../scss/_layout.scss */
+/* line 24, ../scss/_layout.scss */
 .polaroid img {
   position: relative;
   margin: 16px 0px 0px 15px;
 }
-/* line 27, ../scss/_layout.scss */
+/* line 28, ../scss/_layout.scss */
 .polaroid .polaroid-details {
   position: absolute;
   z-index: 5;
 }
-/* line 30, ../scss/_layout.scss */
+/* line 31, ../scss/_layout.scss */
 .polaroid .polaroid-details.title {
   top: 40px;
   left: 3px;
 }
-/* line 34, ../scss/_layout.scss */
+/* line 35, ../scss/_layout.scss */
 .polaroid .polaroid-details.date {
   top: 70px;
   left: 14px;
 }
 
-/* line 41, ../scss/_layout.scss */
+/* line 42, ../scss/_layout.scss */
 .layout-invitation {
   background: url("../img/invitation_bg.jpg");
 }
