@@ -9,6 +9,10 @@
 		inviteResponse.animate({'opacity':'1'},200);
 	}
 
+	function removeInlineStyle(){
+		invitation.css('display','');
+	}
+
 	// invitation-btn functionality
 	invitBtn.on('click',function(){
 		$(this).addClass('active').siblings().removeClass('active');
@@ -24,10 +28,17 @@
 	rsvpBtn.on('click',function(){
 		if(!invitationOpen) {
 			rsvpBtn.html('CLOSE');
-			invitation.stop().fadeIn("slow");
+			invitation.stop().fadeIn("slow",function(){
+				invitationOpen = true;
+			});
 		} else {
 			rsvpBtn.html('RSVP');
-			invitation.stop().fadeOut("slow");
+			invitation.stop().fadeOut("slow",function(){
+				invitationOpen = false;
+				// remove inline style so media-queries will so invitation again
+				removeInlineStyle();
+			});
 		}
 	});
+
 })();

@@ -572,7 +572,7 @@ a {
 .layout-polaroids {
   position: relative;
   margin: auto;
-  height: 100%;
+  overflow: auto;
   padding-top: 30px;
 }
 
@@ -815,8 +815,8 @@ a.invitation-btn:last-child {
     top: 330px;
     left: 50%;
     margin-left: -320px;
-    display: block;
     position: absolute;
+    display: block;
   }
   /* line 84, ../scss/_mediaqueries.scss */
   .layout-invitation h1 {
