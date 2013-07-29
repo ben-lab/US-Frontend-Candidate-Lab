@@ -9,7 +9,7 @@ html {
 }
 
 body {
-	background:url('../img/woodgrain.jpg');
+	background:url('../img/min/woodgrain.jpg');
 }
 
 a {
@@ -33,7 +33,7 @@ a {
 	display:inline-block;
 	width:254px;
 	height:278px;
-	background:url('../img/polaroid.png');
+	background:url('../img/min/polaroid.png');
 	-webkit-box-shadow:  2px 2px 4px 0px rgba(0, 0, 0, .3);
 	box-shadow:  2px 2px 4px 0px rgba(0, 0, 0, .3);
 	img {
@@ -87,7 +87,7 @@ a {
 }
 
 .layout-invitation {
-	background:url('../img/invitation_bg.jpg');
+	background:url('../img/min/invitation_bg.jpg');
 	z-index:20;
 	position:absolute;
 	padding:30px;
