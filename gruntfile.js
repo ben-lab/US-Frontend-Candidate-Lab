@@ -2,20 +2,15 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    concat: {
-      options: {
-        separator: ';'
-      },
-      dist: {
-        src: ['js/**/*.js'],
-        dest: 'www/js/*.js'
+    uglify: {
+      files: {
+        'www/js/min/main.min.js': ['www/js/main.js']
       }
     },
-    uglify: {
-      dist: {
-        files: {
-          'www/js/min/main.min.js': ['<%= concat.dist.dest %>']
-        }
+    smushit: {
+      mygroup: {
+        src: ['www/img/*.png','www/img/*.jpg'],
+        dest: 'www/img/min'
       }
     },
     qunit: {
@@ -36,7 +31,7 @@ module.exports = function(grunt) {
    compass: {
       dist: {
         options: {
-          sassDir: 'scss',
+          sassDir: 'www/scss',
           cssDir: 'www/css'
         }
       }
@@ -54,11 +49,11 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-compass');
+  grunt.loadNpmTasks('grunt-smushit');
 
   grunt.registerTask('test', ['jshint']);
 
-  grunt.registerTask('default', ['jshint', 'compass', 'concat', 'uglify']);
+  grunt.registerTask('default', ['jshint', 'compass', 'smushit', 'uglify']);
 
 };

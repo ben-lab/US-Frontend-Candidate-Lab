@@ -38,10 +38,24 @@ Use this area to communicate any thought processes, ideas, or challenges you enc
 
 ## Approach
 
+* I wanted to create a cross-device experience - make the site responsive.
+* I used the SMACSS method of naming selectors for modularity and scalability.
 
 ## Challenges
 
+* The background pattern needed to be repeatable.
+* I had to create a @font-face for one of the fonts. If this were to be used for a client, I would check with legal before going into production about this.
+** For the Helvetica-Neue, I used Google Open Sans instead.
+* A personal challenge was learning Grunt throughout this exercise. I am very happy with the result!
+
 ## Enhancements
-* Better naming convention for selectors.
+
+* Responsive layout.
+* Better naming convention for scalability.
+* Minified javascript and css.
+* Compressed image assets.
+* Cleaner markup.
 
 ## Future Updates
+
+* Impliment Instagram API after this event to display photos taken.
