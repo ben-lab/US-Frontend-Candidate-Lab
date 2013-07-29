@@ -45,7 +45,7 @@ Use this area to communicate any thought processes, ideas, or challenges you enc
 
 * The background pattern needed to be repeatable.
 * I had to create a @font-face for one of the fonts. If this were to be used for a client, I would check with legal before going into production about this.
-** For the Helvetica-Neue, I used Google Open Sans instead.
+* For the Helvetica-Neue, I used Google Open Sans instead.
 * A personal challenge was learning Grunt throughout this exercise. I am very happy with the result!
 
 ## Enhancements
@@ -58,4 +58,4 @@ Use this area to communicate any thought processes, ideas, or challenges you enc
 
 ## Future Updates
 
-* Impliment Instagram API after this event to display photos taken.
+* Implement Instagram API after this event to display photos taken.
