@@ -21,7 +21,9 @@
         }
     }
     .layout-polaroids {
-        text-align:center;
+        width:320px;
+        margin:auto;
+        position:relative;
     }
     .polaroid {
         position:relative;
@@ -35,6 +37,8 @@
         bottom:auto;
         text-align:center;
         display:none;
+        position:absolute;
+        position:fixed;
         h1 {
             font-size:40px;
         }
@@ -53,6 +57,9 @@
             text-align:center;
             width:auto;
         }
+    }
+    .invitation-content {
+        
     }
 }
 
@@ -144,6 +151,7 @@
     }
     .layout-polaroids {
         width:80%!important;
+        padding-top:30px;
     }
     .layout-invitation {
         position:absolute;

@@ -14,7 +14,7 @@ module.exports = function(grunt) {
     uglify: {
       dist: {
         files: {
-          'www/js/min/*.min.js': ['<%= concat.dist.dest %>']
+          'www/js/min/main.min.js': ['<%= concat.dist.dest %>']
         }
       }
     },
